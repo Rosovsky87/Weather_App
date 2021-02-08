@@ -1,0 +1,19 @@
+
+.city{
+margin: 8px ;
+height:35px;
+background-color: PowderBlue;
+border-radius:5px;
+cursor : pointer;
+display: flex;
+font-size: 20px;
+
+.iconWrapper{
+  margin: 5px;
+}
+
+.cityName{
+  flex-grow:2;
+  margin-top: 1px;
+}
+}
