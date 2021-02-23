@@ -12,7 +12,9 @@ function City({ onChange, onDeleteCity, provided, city }) {
       <div className='iconWrapper' {...provided.dragHandleProps} >
         <FiMenu />
       </div>
-      <div className='cityName' onClick={(cityName) => onChange(cityName)}>
+      <div
+        className='cityName'
+        onClick={(cityName) => onChange(cityName)}>
         {city.cityName}
       </div>
       <div className='iconWrapper'>

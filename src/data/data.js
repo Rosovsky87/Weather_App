@@ -4,8 +4,8 @@ const getData = async (cityName) => {
   const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=ru&APPID=1fb8f1d720988873605cf76fe9165755`);
 
   if (!data.ok) {
-    alert(`Произошла ошибка, пожалуйста обновите страницу! Could not fetch, received ${data.status}`);
-    return [];
+    alert(`Такого города нет. Введите верное название города`);
+    return
   }
 
   return data.json();
@@ -43,5 +43,6 @@ const transformWeather = (res) => {
 
 export const getWeather = async (cityName) => {
   const res = await getData(cityName);
+  if (!res) return
   return transformWeather(res);
 }
