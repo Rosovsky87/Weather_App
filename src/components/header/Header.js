@@ -1,5 +1,5 @@
 import React from 'react';
-import SwitchBtn from '../switchBtn/SwitchBtn';
+import SwitchBtn from '../switchBtn/switchBtn';
 import './header.scss';
 
 
