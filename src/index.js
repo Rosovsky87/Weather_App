@@ -9,8 +9,3 @@ ReactDOM.render(
   </React.StrictMode >,
   document.getElementById('weather-widget')
 );
-
-
-
-
-
